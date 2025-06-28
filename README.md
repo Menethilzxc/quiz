@@ -30,16 +30,16 @@
 ##  Превью
 
 ###  Главная страница:
-![Главная](.src/assets/main-preview.png)
+![Главная](./assets/main-preview.png)
 
 ###  Процесс прохождения:
-![Вопрос](.src/assets/question-preview.jpg)
+![Вопрос](./assets/question-preview.jpg)
 
 ###  Результат:
-![Результат](.src/assets/result-preview.png)
+![Результат](./assets/result-preview.png)
 
 ###  Редактирование вопросов:
-![Результат](.src/assets/edit-questions-preview.png)
+![Результат](./assets/edit-questions-preview.png)
 
 ##  Установка и запуск
 
