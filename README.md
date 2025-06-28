@@ -1,12 +1,67 @@
-# React + Vite
+# Quiz App на React + MongoDB
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+Приложение для прохождения тестов с сохранением истории и возможностью редактирования/удаления вопросов. Используется собственный backend с базой данных MongoDB, запущенной в Docker.
 
-Currently, two official plugins are available:
+## Стек технологий
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+### Фронтенд:
+- React
+- Redux
+- React Router DOM
+- JavaScript
+- Vite
 
-## Expanding the ESLint configuration
+### Бэкенд:
+- Node.js
+- Express
+- Mongoose (MongoDB)
+- Docker (для запуска MongoDB)
 
-If you are developing a production application, we recommend using TypeScript and enable type-aware lint rules. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+##  Функциональность
+
+-  Запуск теста с пошаговой навигацией по вопросам
+-  Подсветка выбранного ответа
+-  Подсчёт количества правильных ответов
+-  Сохранение истории прохождений (дата и результат)
+-  Режим редактирования вопросов:
+  - Добавление новых
+  - Изменение/Удаление существующих
+
+##  Превью
+
+###  Главная страница:
+![Главная](./assets/main-preview.png)
+
+###  Процесс прохождения:
+![Вопрос](./assets/question-preview.jpg)
+
+###  Результат:
+![Результат](./assets/result-preview.png)
+
+###  Редактирование вопросов:
+![Результат](./assets/edit-questions-preview.png)
+
+##  Установка и запуск
+
+### 1. Клонировать репозиторий
+
+- git clone https://github.com/Menethilzxc/quiz.git
+- cd quiz
+
+### 2. Установить зависимости
+
+#### Фронтенд:
+
+- cd frontend
+- npm install
+- npm run dev
+
+
+#### Бэкенд:
+- cd backend
+- npm install
+- node server.js
+
+### 3. 3. Запустить MongoDB через Docker
+
+- docker run -d --name mongo_new -p 27019:27017 -v mongo_data:/data/db mongo
